@@ -1,0 +1,77 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+}
+@font-face{
+    font-family:'Plus Jakarta Sans';
+    src:url('assets\\fonts\\PlusJakartaSans-VariableFont_wght.ttf'),url('assets\fonts\static\PlusJakartaSans-Medium.ttf'),url('assets\fonts\static\PlusJakartaSans-ExtraBold.ttf')
+    format('truetype')
+}
+body{
+    background: white;
+    font-family:'Plus Jakarta Sans';
+    color:var(--Grayish-blue);
+}
+img{
+    width:50px;
+    height:50px;
+    vertical-align: middle;
+}
+.number{
+    color:white;
+    background:var(--Blue);
+    padding:2.5px 10px;
+    border-radius:10px;
+    margin:0 10px;
+}
+.notification span{
+    display:inline-flex;
+    flex-direction: column;
+/* gap:5px; */
+/* margin:5px; */
+vertical-align:middle;
+    
+}
+
+.header{
+    display:flex;
+    padding:10px;
+    justify-content:space-between;
+    border:solid 1px var(--Blue);
+}
+.notification{
+    padding:15px 10px;
+    margin:10px 0;
+    border:solid 1px var(--Blue);
+   border-radius: 10px;; 
+
+}
+.notification #message{
+   
+    margin:10px 0 10px 2rem;
+    padding:12px;
+    border-radius:10px;
+    border:solid 1px var(--Light-grayish-blue-2);
+}
+.notification #message:hover{
+    background:var(--Light-grayish-blue-1);
+    transition:all 300ms;
+}
+.unread{
+    background:var(--Very-light-grayish-blue)
+}
+a{
+    text-decoration:none;
+    color:var(--Very-dark-blue);
+    font-weight:800;
+}
+a:hover{
+    color:var(--Blue)
+}
