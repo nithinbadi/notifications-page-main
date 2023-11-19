@@ -44,13 +44,25 @@ vertical-align:middle;
     display:flex;
     padding:10px;
     justify-content:space-between;
-    border:solid 1px var(--Blue);
+    
+}
+.reminder{
+    width:10px;height:10px;background:var(--Red);border-radius:100%;
+}
+.header a{
+    margin: 20px 0;
+    font-weight:500;
+}
+.header a:hover{
+    color:var(--Grayish-blue)
+}
+.header h3{
+    font-size:1.4rem
 }
 .notification{
     padding:15px 10px;
     margin:10px 0;
-    border:solid 1px var(--Blue);
-   border-radius: 10px;; 
+   border-radius: 10px;
 
 }
 .notification #message{
@@ -58,6 +70,7 @@ vertical-align:middle;
     margin:10px 0 10px 2rem;
     padding:12px;
     border-radius:10px;
+    max-width:420px;
     border:solid 1px var(--Light-grayish-blue-2);
 }
 .notification #message:hover{
@@ -71,7 +84,35 @@ a{
     text-decoration:none;
     color:var(--Very-dark-blue);
     font-weight:800;
+    text-wrap:wrap;
 }
 a:hover{
     color:var(--Blue)
+}
+.notification span{
+    margin:0 10px;
+}
+.picture:hover{
+    box-shadow:0 0 3px 2px var(--Light-grayish-blue-1);
+}
+.notification span div{
+    max-width:45vw;
+    
+}
+.link{
+    color:var(--Grayish-blue)
+}
+.chess{
+    color:var(--Blue)
+}
+.comment{
+    display:flex;
+    justify-content:space-between;
+}
+
+@media (min-width: 600px){
+    .notification span div{
+        max-width:70vw;
+        
+    }
 }
